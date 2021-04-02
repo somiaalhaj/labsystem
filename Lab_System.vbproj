@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C243B67A-E804-4DC0-808E-2C3519D61024}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Lab_System</RootNamespace>
+    <AssemblyName>Lab_System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Lab_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Lab_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AnalogClock">
+      <HintPath>D:\مشروع المعهد\المحاضرة العاشرة\Hotel_Sys\Hotel_Sys\Hotel_Sys\bin\Debug\AnalogClock.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Star_Soft">
+      <HintPath>C:\Users\user\Desktop\button_img\Star_Soft\Star_Soft\bin\Debug\Star_Soft.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Lab_Cls\Frm_Login.Designer.vb">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Cls\Frm_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Cls\Frm_Main.Designer.vb">
+      <DependentUpon>Frm_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Cls\Frm_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Cls\Frm_Parient.Designer.vb">
+      <DependentUpon>Frm_Parient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Cls\Frm_Parient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Cls\Lab_Md.vb" />
+    <Compile Include="Lab_Codding\Frm_Antibiotics.Designer.vb">
+      <DependentUpon>Frm_Antibiotics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Antibiotics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Case.Designer.vb">
+      <DependentUpon>Frm_Case.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Case.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Categories.Designer.vb">
+      <DependentUpon>Frm_Categories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Categories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Checkups.Designer.vb">
+      <DependentUpon>Frm_Checkups.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Checkups.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Checkup_Supplies.Designer.vb">
+      <DependentUpon>Frm_Checkup_Supplies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Checkup_Supplies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Employee.Designer.vb">
+      <DependentUpon>Frm_Employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Mordeen.Designer.vb">
+      <DependentUpon>Frm_Mordeen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Mordeen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Patients.Designer.vb">
+      <DependentUpon>Frm_Patients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Patients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Perpetuity.Designer.vb">
+      <DependentUpon>Frm_Perpetuity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Perpetuity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Religion.Designer.vb">
+      <DependentUpon>Frm_Religion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Religion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Sender.Designer.vb">
+      <DependentUpon>Frm_Sender.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Codding\Frm_Sender.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Che_Unit.Designer.vb">
+      <DependentUpon>Frm_Che_Unit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Che_Unit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Search_Buy_Bill.Designer.vb">
+      <DependentUpon>Frm_Search_Buy_Bill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Search_Buy_Bill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Search_Categories.Designer.vb">
+      <DependentUpon>Frm_Search_Categories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Search_Categories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Search_Che_Fath.Designer.vb">
+      <DependentUpon>Frm_Search_Che_Fath.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Search_Che_Fath.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Search_Mored.Designer.vb">
+      <DependentUpon>Frm_Search_Mored.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Search_Mored.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Search_Symp.Designer.vb">
+      <DependentUpon>Frm_Search_Symp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Search_Symp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Search_TYPE_SAMPLE.Designer.vb">
+      <DependentUpon>Frm_Search_TYPE_SAMPLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Fill_Search\Frm_Search_TYPE_SAMPLE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Anti_Checkup.Designer.vb">
+      <DependentUpon>Frm_Anti_Checkup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Anti_Checkup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Buy_Bill.Designer.vb">
+      <DependentUpon>Frm_Buy_Bill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Buy_Bill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Cati_Remain.Designer.vb">
+      <DependentUpon>Frm_Cati_Remain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Cati_Remain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Checkup_Order.Designer.vb">
+      <DependentUpon>Frm_Checkup_Order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Checkup_Order.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Checkup_Procedure.Designer.vb">
+      <DependentUpon>Frm_Checkup_Procedure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Checkup_Procedure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Lab_Req.Designer.vb">
+      <DependentUpon>Frm_Lab_Req.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Lab_Req.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Lab_Supplies.Designer.vb">
+      <DependentUpon>Frm_Lab_Supplies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Lab_Supplies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Open_Deciphered.Designer.vb">
+      <DependentUpon>Frm_Open_Deciphered.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Open_Deciphered.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Price_.Designer.vb">
+      <DependentUpon>Frm_Price_.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Price_.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Salary.Designer.vb">
+      <DependentUpon>Frm_Salary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Salary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Stockroom.Designer.vb">
+      <DependentUpon>Frm_Stockroom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Process\Frm_Stockroom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Reports\Frm_Report.Designer.vb">
+      <DependentUpon>Frm_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Reports\Frm_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab_Setting\Frm_Users.Designer.vb">
+      <DependentUpon>Frm_Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lab_Setting\Frm_Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Lab_Cls\Frm_Login.resx">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Cls\Frm_Main.resx">
+      <DependentUpon>Frm_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Cls\Frm_Parient.resx">
+      <DependentUpon>Frm_Parient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Codding\Frm_Antibiotics.resx">
+      <DependentUpon>Frm_Antibiotics.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Codding\Frm_Case.resx">
+      <DependentUpon>Frm_Case.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Codding\Frm_Categories.resx">
+      <DependentUpon>Frm_Categories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Codding\Frm_Checkups.resx">
+      <DependentUpon>Frm_Checkups.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Codding\Frm_Checkup_Supplies.resx">
+      <DependentUpon>Frm_Checkup_Supplies.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Codding\Frm_Employee.resx">
+      <DependentUpon>Frm_Employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Codding\Frm_Mordeen.resx">
+      <DependentUpon>Frm_Mordeen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Codding\Frm_Patients.resx">
+      <DependentUpon>Frm_Patients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Codding\Frm_Perpetuity.resx">
+      <DependentUpon>Frm_Perpetuity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Codding\Frm_Religion.resx">
+      <DependentUpon>Frm_Religion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Codding\Frm_Sender.resx">
+      <DependentUpon>Frm_Sender.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Fill_Search\Frm_Che_Unit.resx">
+      <DependentUpon>Frm_Che_Unit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Fill_Search\Frm_Search_Buy_Bill.resx">
+      <DependentUpon>Frm_Search_Buy_Bill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Fill_Search\Frm_Search_Categories.resx">
+      <DependentUpon>Frm_Search_Categories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Fill_Search\Frm_Search_Che_Fath.resx">
+      <DependentUpon>Frm_Search_Che_Fath.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Fill_Search\Frm_Search_Mored.resx">
+      <DependentUpon>Frm_Search_Mored.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Fill_Search\Frm_Search_Symp.resx">
+      <DependentUpon>Frm_Search_Symp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Fill_Search\Frm_Search_TYPE_SAMPLE.resx">
+      <DependentUpon>Frm_Search_TYPE_SAMPLE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Frm_Anti_Checkup.resx">
+      <DependentUpon>Frm_Anti_Checkup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Frm_Buy_Bill.resx">
+      <DependentUpon>Frm_Buy_Bill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Frm_Cati_Remain.resx">
+      <DependentUpon>Frm_Cati_Remain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Frm_Checkup_Order.resx">
+      <DependentUpon>Frm_Checkup_Order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Frm_Checkup_Procedure.resx">
+      <DependentUpon>Frm_Checkup_Procedure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Frm_Lab_Req.resx">
+      <DependentUpon>Frm_Lab_Req.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Frm_Lab_Supplies.resx">
+      <DependentUpon>Frm_Lab_Supplies.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Frm_Open_Deciphered.resx">
+      <DependentUpon>Frm_Open_Deciphered.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Frm_Price_.resx">
+      <DependentUpon>Frm_Price_.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Frm_Salary.resx">
+      <DependentUpon>Frm_Salary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Process\Frm_Stockroom.resx">
+      <DependentUpon>Frm_Stockroom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Reports\Frm_Report.resx">
+      <DependentUpon>Frm_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab_Setting\Frm_Users.resx">
+      <DependentUpon>Frm_Users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patients-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lab_login_f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seeting1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codding1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\process.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lab_main1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lab_main1_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-go-last-view-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-go-next-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-go-previous-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-go-first-view-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parent_frm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tab_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\بدون عنوان-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\بدون عنوان-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_accounts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tab_img2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iden1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tab_img4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\healthcare-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_up-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\بدون عنوان-31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tab_img44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-document-insurance-policy-protection-shield-3a2b5d1530ecd16a-512x512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\383977.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\healthy-man-005-512.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
